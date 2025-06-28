@@ -23,10 +23,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload HTML files
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload static HTML
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # Or use 'public' or 'docs' if that's where index.html is
+          path: "."
 
       - name: Deploy to GitHub Pages
         id: deployment
